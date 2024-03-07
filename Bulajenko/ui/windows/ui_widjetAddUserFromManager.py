@@ -1,0 +1,189 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'widjetAddUserFromManagerXHeHlV.ui'
+##
+## Created by: Qt User Interface Compiler version 5.15.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+
+import resurce_rc
+
+class Ui_WidjetAddUserFromManager(object):
+    def setupUi(self, WidjetAddUserFromManager):
+        if not WidjetAddUserFromManager.objectName():
+            WidjetAddUserFromManager.setObjectName(u"WidjetAddUserFromManager")
+        WidjetAddUserFromManager.resize(1150, 46)
+        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(WidjetAddUserFromManager.sizePolicy().hasHeightForWidth())
+        WidjetAddUserFromManager.setSizePolicy(sizePolicy)
+        self.verticalLayout = QVBoxLayout(WidjetAddUserFromManager)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(5, 2, 5, 2)
+        self.groupBox = QGroupBox(WidjetAddUserFromManager)
+        self.groupBox.setObjectName(u"groupBox")
+        self.groupBox.setMaximumSize(QSize(16777215, 16777215))
+        font = QFont()
+        font.setStyleStrategy(QFont.PreferDefault)
+        self.groupBox.setFont(font)
+        self.horizontalLayout = QHBoxLayout(self.groupBox)
+        self.horizontalLayout.setSpacing(2)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 1)
+        self.le_id = QLineEdit(self.groupBox)
+        self.le_id.setObjectName(u"le_id")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.le_id.sizePolicy().hasHeightForWidth())
+        self.le_id.setSizePolicy(sizePolicy1)
+        self.le_id.setMinimumSize(QSize(40, 0))
+        self.le_id.setMaximumSize(QSize(40, 16777215))
+        self.le_id.setFocusPolicy(Qt.StrongFocus)
+        self.le_id.setInputMethodHints(Qt.ImhNone)
+        self.le_id.setReadOnly(True)
+
+        self.horizontalLayout.addWidget(self.le_id)
+
+        self.le_username = QLineEdit(self.groupBox)
+        self.le_username.setObjectName(u"le_username")
+        sizePolicy1.setHeightForWidth(self.le_username.sizePolicy().hasHeightForWidth())
+        self.le_username.setSizePolicy(sizePolicy1)
+        self.le_username.setMinimumSize(QSize(70, 0))
+        self.le_username.setMaximumSize(QSize(100, 16777215))
+
+        self.horizontalLayout.addWidget(self.le_username, 0, Qt.AlignLeft)
+
+        self.le_name = QLineEdit(self.groupBox)
+        self.le_name.setObjectName(u"le_name")
+        sizePolicy1.setHeightForWidth(self.le_name.sizePolicy().hasHeightForWidth())
+        self.le_name.setSizePolicy(sizePolicy1)
+        self.le_name.setMinimumSize(QSize(130, 0))
+        self.le_name.setMaximumSize(QSize(200, 16777215))
+
+        self.horizontalLayout.addWidget(self.le_name)
+
+        self.le_email = QLineEdit(self.groupBox)
+        self.le_email.setObjectName(u"le_email")
+        sizePolicy1.setHeightForWidth(self.le_email.sizePolicy().hasHeightForWidth())
+        self.le_email.setSizePolicy(sizePolicy1)
+        self.le_email.setMinimumSize(QSize(100, 0))
+        self.le_email.setMaximumSize(QSize(180, 16777215))
+
+        self.horizontalLayout.addWidget(self.le_email)
+
+        self.le_password = QLineEdit(self.groupBox)
+        self.le_password.setObjectName(u"le_password")
+        sizePolicy1.setHeightForWidth(self.le_password.sizePolicy().hasHeightForWidth())
+        self.le_password.setSizePolicy(sizePolicy1)
+        self.le_password.setMinimumSize(QSize(130, 0))
+        self.le_password.setMaximumSize(QSize(16777215, 16777215))
+
+        self.horizontalLayout.addWidget(self.le_password)
+
+        self.cb_role = QComboBox(self.groupBox)
+        self.cb_role.setObjectName(u"cb_role")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.cb_role.sizePolicy().hasHeightForWidth())
+        self.cb_role.setSizePolicy(sizePolicy2)
+        self.cb_role.setMinimumSize(QSize(100, 0))
+        self.cb_role.setMaximumSize(QSize(200, 16777215))
+        self.cb_role.setCursor(QCursor(Qt.PointingHandCursor))
+
+        self.horizontalLayout.addWidget(self.cb_role)
+
+        self.lbl_date_create = QLabel(self.groupBox)
+        self.lbl_date_create.setObjectName(u"lbl_date_create")
+        self.lbl_date_create.setMinimumSize(QSize(130, 0))
+
+        self.horizontalLayout.addWidget(self.lbl_date_create)
+
+        self.btn_save = QPushButton(self.groupBox)
+        self.btn_save.setObjectName(u"btn_save")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.btn_save.sizePolicy().hasHeightForWidth())
+        self.btn_save.setSizePolicy(sizePolicy3)
+        self.btn_save.setMinimumSize(QSize(60, 0))
+        self.btn_save.setMaximumSize(QSize(60, 16777215))
+        self.btn_save.setCursor(QCursor(Qt.PointingHandCursor))
+        icon = QIcon()
+        icon.addFile(u":/Icons/icons/save_.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_save.setIcon(icon)
+        self.btn_save.setIconSize(QSize(16, 16))
+
+        self.horizontalLayout.addWidget(self.btn_save)
+
+        self.btn_delete = QPushButton(self.groupBox)
+        self.btn_delete.setObjectName(u"btn_delete")
+        sizePolicy3.setHeightForWidth(self.btn_delete.sizePolicy().hasHeightForWidth())
+        self.btn_delete.setSizePolicy(sizePolicy3)
+        self.btn_delete.setMinimumSize(QSize(60, 0))
+        self.btn_delete.setMaximumSize(QSize(60, 16777215))
+        self.btn_delete.setCursor(QCursor(Qt.PointingHandCursor))
+        icon1 = QIcon()
+        icon1.addFile(u":/Icons/icons/trash-2_.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_delete.setIcon(icon1)
+        self.btn_delete.setIconSize(QSize(16, 16))
+
+        self.horizontalLayout.addWidget(self.btn_delete)
+
+
+        self.verticalLayout.addWidget(self.groupBox, 0, Qt.AlignTop)
+
+        self.gbx_msg = QGroupBox(WidjetAddUserFromManager)
+        self.gbx_msg.setObjectName(u"gbx_msg")
+        sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.gbx_msg.sizePolicy().hasHeightForWidth())
+        self.gbx_msg.setSizePolicy(sizePolicy4)
+        self.layout_msg = QHBoxLayout(self.gbx_msg)
+        self.layout_msg.setSpacing(5)
+        self.layout_msg.setObjectName(u"layout_msg")
+        self.layout_msg.setContentsMargins(0, 0, 0, 0)
+        self.label = QLabel(self.gbx_msg)
+        self.label.setObjectName(u"label")
+        sizePolicy4.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy4)
+        self.label.setMinimumSize(QSize(40, 0))
+        self.label.setMaximumSize(QSize(40, 16777215))
+
+        self.layout_msg.addWidget(self.label)
+
+        self.lbl_msg = QLabel(self.gbx_msg)
+        self.lbl_msg.setObjectName(u"lbl_msg")
+        sizePolicy4.setHeightForWidth(self.lbl_msg.sizePolicy().hasHeightForWidth())
+        self.lbl_msg.setSizePolicy(sizePolicy4)
+
+        self.layout_msg.addWidget(self.lbl_msg)
+
+
+        self.verticalLayout.addWidget(self.gbx_msg)
+
+
+        self.retranslateUi(WidjetAddUserFromManager)
+
+        QMetaObject.connectSlotsByName(WidjetAddUserFromManager)
+    # setupUi
+
+    def retranslateUi(self, WidjetAddUserFromManager):
+        WidjetAddUserFromManager.setWindowTitle(QCoreApplication.translate("WidjetAddUserFromManager", u"Form", None))
+        self.lbl_date_create.setText("")
+        self.btn_save.setText("")
+        self.btn_delete.setText("")
+        self.label.setText("")
+        self.lbl_msg.setText("")
+    # retranslateUi
+
