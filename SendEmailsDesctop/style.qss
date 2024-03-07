@@ -1,0 +1,755 @@
+*{
+    font: 12pt "Arial";
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 0;
+}
+QMainWindow,
+QFrame#frame_3,
+QFrame#central_frame,
+QWidget#FormAddEmailOperator,
+QWidget#formChangeNameRegion{
+    background-color:rgb(42, 61, 79);
+}
+QFrame#footer_frame>QLabel{
+    font: 8pt "Arial";
+}
+
+
+QFrame#frame_top,
+QFrame#frame_23,
+QFrame#header_frame,
+QFrame#main_frame,
+QFrame#footer_frame,
+QFrame#frame_log,
+QLabel#lbl_admins,
+QScrollArea#scrollArea,
+QFrame#frame_26,
+QFrame#frm_top_title,
+QToolBox::tab,
+QLabel#lbl_operator,
+QLabel#count_sp,
+QLabel#count_regions
+{
+    background-color: rgb(33, 47, 61);
+}
+QLabel#lbl_operator,
+QLabel#count_sp,
+QLabel#count_regions
+{
+    border-bottom:2px solid #3daee9;
+}
+QPushButton#search_btn,
+QPushButton#btn_add_field_email_region,
+QPushButton#btn_add_field_email_operator,
+QPushButton#btn_export_regions,
+QPushButton#btn_change_name_region,
+QPushButton#btn_pandas_upload,
+QPushButton#btn_upload_mgmn_outlook,
+QPushButton#btn_delete_row_log,
+QPushButton#btn_clear_log,
+QPushButton#btn_add_admin{
+    background-color: rgb(62, 90, 116);
+}
+
+
+QFrame#top_frame,
+QFrame#frame_full_menu,
+QFrame#frame_only_icons,
+#statistics_menu_listWidget,
+#email_operator_listWidget,
+#top_statistics_frame{
+    background-color: rgb(33, 47, 61);
+}
+
+QFrame#frame_full_menu,
+QFrame#frame_only_icons{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+QFrame#frame_only_icons QPushButton{
+    border-bottom:2px solid transparent;
+    color:#c5c5c5;
+}
+QFrame#frame_only_icons QPushButton:hover,
+QFrame#frame_full_menu QPushButton:hover,
+QFrame#frame_only_icons QPushButton:checked,
+QFrame#frame_full_menu QPushButton:checked{
+/*    background-color: rgba(33, 47, 61, 0.5);*/
+    background-color:rgb(42, 61, 79);
+    border-bottom:2px solid #3daee9;
+    color: #ffffff;
+}
+QFrame#frame_full_menu QPushButton{
+    color:#c5c5c5;
+    border-bottom:2px solid transparent;
+    border-top-right-radius:none;
+    border-bottom-right-radius:none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    text-align: left;
+    padding-left:9px;
+}
+QToolBox{
+    icon-size: 40px;
+    margin-bottom: 15px;
+}
+QToolBox::tab{
+    /*    border: 10px solid #212f3d;*/
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px;
+    border-bottom: 2px solid #212f3d;
+}
+
+QToolBox::tab:selected{
+    border-color: #5983a7;
+}
+#logo_label_2{
+    padding: 8px;
+}
+
+#toggle_menu_btn{
+    background-color: rgb(33, 47, 61);
+    margin-left:5px;
+}
+#toggle_menu_btn:hover{
+    background-color:#3e5a74;
+}
+QStackedWidget#statistics_stackedWidget {
+/*    border: 2px solid #5983a7;*/
+}
+#email_operator_listWidget{
+    border: 2px solid #3daee9;
+    border-radius:5px;
+    font: 10pt "Arial";
+}
+#statistics_menu_listWidget::item,
+#email_operator_listWidget::item{
+    /* Ensure borders are set for proper styling */
+    border-bottom:2px solid transparent;
+    color:#c5c5c5;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#email_operator_listWidget::item:hover,
+#email_operator_listWidget::item:selected{
+    background-color:rgb(42, 61, 79);
+    color: #ffffff;
+    outline: 0px;
+    outline-color: 5px;
+}
+#status:placeholder{
+    color: red;
+}
+/* Border radius for '#listWidget' items */
+#statistics_menu_listWidget::item:hover,
+#statistics_menu_listWidget::item:selected{
+    background-color:rgb(42, 61, 79);
+    border-bottom: 2px solid #3daee9;
+    color: #ffffff;
+}
+#statistics_menu_listWidget::icon {
+    color: #c5c5c5;
+    background-color: red;
+}
+#statistics_menu_listWidget::icon:hover,
+#statistics_menu_listWidget::icon:selected {
+    color: #ffffff;
+    background-color: green;
+}
+
+#top_statistics_frame QGroupBox,
+#grb_status_inc{
+/*    background-color: #3e5a74;*/
+    border: 2px solid #3daee9;
+    border-radius:5px;
+    margin-top: 10px;
+    font: 10pt "Arial";
+/*    padding-left: 20px;*/
+/*    padding-right: 20px;*/
+}
+#top_statistics_frame QGroupBox::title,
+#grb_status_inc::title{
+    subcontrol-origin: margin;
+    left: 10px;
+    bottom: 5px;
+    padding: 5px 2px 5px 2px;
+}
+#top_statistics_frame QGroupBox QLabel,
+#grb_status_inc QLabel,
+#lbl_link_inc{
+    font: 8pt "Arial";
+}
+#top_statistics_frame QGroupBox #total_inc_lbl,
+#top_statistics_frame QGroupBox #operators_total_lbl,
+#top_statistics_frame QGroupBox #operators_total_emails_lbl,
+#top_statistics_frame QGroupBox #operators_total_out_emails_lbl,
+#top_statistics_frame QGroupBox #users_total_lbl{
+    font: 20pt "Arial";
+    font-weight: bold;
+    color: #5983a7;
+    padding-top: -10px;
+}
+
+QLabel#lbl_link_inc{
+    color:#5983a7;
+    text-decoration: none;
+}
+
+
+
+
+QStackedWidget, QWidget, QPushButton#btn_ok, QPushButton#btn_ok_2{
+    background-color: transparent;
+}
+QPushButton{
+    text-align: center;
+}
+
+QPushButton#btn_page_add_email_operator,
+QPushButton#btn_page_add_emails_region,
+QPushButton#btn_page_pandas_html_load,
+QPushButton#btn_log,
+QPushButton#btn_upload_all_emails,
+QPushButton#btn_download_all_emails{
+    text-align: left;
+    padding-left: 10px;
+}
+QPushButton#btn_upload_mgmn_outlook,
+QPushButton#btn_pandas_upload{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+QToolTip{
+    height: 20px;
+    background-color: rgb(118, 121, 124);
+    color: rgb(255, 255, 255);
+}
+
+
+QPushButton#close_btn:hover{
+    background-color: rgb(235, 0, 0);
+}
+QPushButton#menu_btn:hover, QPushButton#minimizated_btn:hover{
+    background-color: rgb(62, 90, 116);
+}
+
+QLineEdit,
+QLabel#lbl_add_email_operator
+{
+    background-color: rgb(29, 32, 35);
+    padding: 0.23em;
+    border-style: solid;
+    border: 2px solid rgb(118, 121, 124);
+    border-radius: 0.09em;
+    color: rgb(239, 240, 241);
+}
+
+QLineEdit:hover,
+QLineEdit:focus
+{
+    border: 2px solid rgb(61, 174, 233);
+    color: rgb(239, 240, 241);
+}
+
+QLineEdit:hover:pressed
+{
+    background-color: rgb(49, 54, 59);
+}
+
+QLabel#lbl_add_email_operator
+{
+    background-color: transparent;
+}
+
+QPushButton[objectName^=btn_save],
+QPushButton[objectName^=btn_delete]{
+    border-radius: 3px;
+    padding: 0;
+}
+QPushButton#btn_delete_admin{
+    background-color: rgb(214, 0, 0);
+}
+
+QPushButton[objectName^=btn_save]{
+    background-color: rgb(44, 153, 52);
+}
+QPushButton[objectName^=btn_save]:hover{
+    background-color: rgb(55, 190, 64);
+}
+
+QPushButton[objectName^=btn_delete]:hover{
+    background-color: rgb(235, 0, 0);
+}
+
+QComboBox, QDateEdit
+{
+    background-color: transparent;
+    border: 2px solid rgb(118, 121, 124);
+    border-radius: 4px;
+    padding: 5px;
+    min-width: 100px;
+}
+
+QComboBox:open
+{
+    background-color: transparent;
+    border: 2px solid rgb(118, 121, 124);
+    cursor: pointer;
+}
+
+QComboBox:closed
+{
+    border: 2px solid rgb(118, 121, 124);
+    cursor: pointer;
+}
+
+QComboBox:!enabled{
+    color: rgb(118, 121, 124);
+}
+
+QComboBox:hover,
+QComboBox:focus
+{
+    border: 2px solid rgb(61, 174, 233);
+}
+
+QComboBox:hover:pressed:!editable
+{
+    background-color: rgb(49, 54, 59);
+}
+
+QComboBox:hover:pressed:editable
+{
+   background-color: rgb(33, 47, 61);
+}
+
+QComboBox QAbstractItemView
+{
+    outline-color: 5px;
+    cursor: pointer;
+}
+
+QComboBox QAbstractItemView::item {
+    background-color: rgb(33, 47, 61);
+    border: none;
+    cursor: pointer;
+
+    padding:3px;
+    outline: 0px;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: rgb(42, 121, 163);
+    cursor: pointer;
+}
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(42, 121, 163);
+    cursor: pointer;
+}
+
+QComboBox::drop-down
+{
+    border: 0px;
+    cursor: pointer;
+    subcontrol-position: right top;
+    subcontrol-origin:margin;
+/*
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+*/
+}
+
+QComboBox::down-arrow
+{
+    border-image: url(:/icons/icons/chevrons-down_.svg);
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+QComboBox::down-arrow:on
+{
+    border-image: url(:/icons/icons/chevrons-up_.svg);
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+QFrame#frm_info_oper, QFrame#frm_info_oper_2{
+    background-color: rgb(33, 47, 61);
+}
+
+QFrame#frm_info_oper>QLabel, QFrame#frm_info_oper_2>QLabel{
+    background-color: transparent;
+}
+QFrame#frm_info_oper>QLabel,
+QFrame#frm_info_oper_2>QLabel,
+QFrame#frm_info_oper>QLineEdit,
+QFrame#frm_info_oper_2>QLineEdit{
+    padding: 10px 5px;
+}
+QFrame#frm_info_oper>QLineEdit,
+QFrame#frm_info_oper_2>QLineEdit{
+    margin: 5px;
+}
+
+QTabWidget::pane
+{
+    border: none;
+    background-color: rgb(42, 61, 79);
+}
+
+
+/* TOP TABS */
+QTabBar::tab:top,
+QTabBar::tab:top:last,
+QTabBar::tab:top:only-one
+{
+    color: #eff0f1;
+    border: 5px transparent black;
+    border-right: 0.04em solid rgb(118, 121, 124);
+    border-top: 0.15em solid rgb(61, 174, 233);
+    background-color: rgb(42, 61, 79);
+    padding: 10px 20px;
+    min-width: 50px;
+    border-radius: 0.09em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+QTabBar::tab:top:!selected
+{
+    color: #eff0f1;
+    background-color: rgb(33, 47, 61);
+    border: 0.04em transparent black;
+    border-right: 0.04em solid rgb(118, 121, 124);
+    border-bottom: 0.04em solid rgb(118, 121, 124);
+    border-top: 0.15em solid rgb(34, 48, 62);
+    border-radius: 0.09em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+QTabBar::tab:top:next-selected
+{
+    border-right: 0.04em transparent rgb(44, 48, 52);
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+QTabBar::tab:top:!selected:hover
+{
+    background-color: rgba(61, 173, 232, 0.1);
+    border-top: 0.15em solid rgb(42, 61, 79);
+    border-radius: 0.09em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+QTabBar::tab:top:!selected:first:hover
+{
+    background-color: rgba(61, 173, 232, 0.1);
+    border-radius: 0.09em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+QTableView::item:selected { background-color: rgb(33, 47, 61); font-weight:400; }
+QTableCornerButton::section { background-color: red; }
+QHeaderView::section { background-color: rgb(33, 47, 61); }
+
+QScrollArea {
+    border: none;
+}
+
+QScrollBar {
+    background-color: rgb(84, 122, 158);
+    border-radius: 5px;
+}
+
+QScrollBar:horizontal {
+    height: 13px;
+}
+
+QScrollBar:vertical {
+    width: 13px;
+}
+
+QScrollBar::handle {
+    background: rgb(84, 122, 158);
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    height: 25px;
+    min-width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    width: 25px;
+    min-height: 10px;
+}
+
+QScrollBar::add-line {
+    border: none;
+    background: none;
+}
+
+QScrollBar::sub-line {
+    border: none;
+    background: none;
+}
+
+QRadioButton::indicator {
+    width: 24px;
+    height: 24px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(:/icons/icons/circle_.svg);
+}
+
+QRadioButton::indicator:unchecked:hover {
+    stroke: red;
+    fill: red;
+}
+
+QRadioButton::indicator:unchecked:pressed {
+    image: url(:/icons/icons/circle_.svg);
+}
+
+QRadioButton::indicator::checked {
+    image: url(:/icons/icons/check-circle_.svg);
+}
+
+QRadioButton::indicator:checked:hover {
+    stroke: rgb(42, 121, 163);
+    fill: rgb(42, 121, 163);
+}
+
+QRadioButton::indicator:checked:pressed {
+    image: url(:/icons/icons/check-circle_.svg);
+}
+
+QStatusBar{
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin:0;
+}
+
+QStatusBar{
+    background-color: rgba(33, 47, 61, 100);
+}
+QStatusBar::item {
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+QProgressBar {
+    font-size: 8pt;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+QProgressBar::chunk {
+    background-color: rgb(42, 121, 163);
+    border-radius: 3px;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #2a3d4f;
+}
+
+#qt_calendar_navigationbar {
+    background-color: #212f3d;
+    border: 2px solid  #2a3d4f;
+    border-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#qt_calendar_prevmonth,
+#qt_calendar_nextmonth {
+    border: none;
+    qproperty-icon: none;
+
+    min-width: 15px;
+    max-width: 15px;
+    min-height: 15px;
+    max-height: 15px;
+
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+}
+#qt_calendar_prevmonth {
+    margin-left:5px;
+    image: url(:/icons/icons/chevron-left_.svg);
+}
+#qt_calendar_nextmonth {
+    margin-right:5px;
+    image: url(:/icons/icons/chevron-right_.svg);
+}
+#qt_calendar_prevmonth:hover,
+#qt_calendar_nextmonth:hover {
+    background-color: #2a79a3;
+}
+
+#qt_calendar_prevmonth:pressed,
+#qt_calendar_nextmonth:pressed {
+    background-color: #2a79a3;
+}
+#qt_calendar_yearbutton {
+    color: #fff;
+    margin:5px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding:0px 10px;
+}
+
+ #qt_calendar_monthbutton {
+    width: 110px;
+    color: #fff;
+    font-size: 18px;
+    margin:5px 0px;
+    border-radius: 5px;
+    padding:0px 2px;
+}
+#qt_calendar_yearbutton:hover,
+#qt_calendar_monthbutton:hover {
+    background-color: #2a79a3;
+}
+
+#qt_calendar_yearbutton:pressed,
+#qt_calendar_monthbutton:pressed {
+    background-color: #2a79a3;
+}
+#qt_calendar_yearedit {
+    min-width: 73px;
+    color: #fff;
+    background: transparent;
+    font-size: 18px;
+}
+#qt_calendar_yearedit::up-button {
+    image: url(:/icons/icons/chevron-up_.svg);
+    subcontrol-position: right;
+}
+
+#qt_calendar_yearedit::down-button {
+    image: url(:/icons/icons/chevron-down_.svg);
+    subcontrol-position: left;
+}
+#qt_calendar_yearedit::down-button,
+#qt_calendar_yearedit::up-button {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius:3px;
+}
+
+#qt_calendar_yearedit::down-button:hover,
+#qt_calendar_yearedit::up-button:hover {
+    background-color: #2a79a3;
+}
+
+
+
+
+QCalendarWidget QToolButton QMenu {
+     background-color: #5983a7;
+}
+QCalendarWidget QToolButton QMenu::item {
+    padding: 3px;
+    min-width:110px;
+}
+ QCalendarWidget QToolButton QMenu::item:selected:enabled {
+    background-color: #22303e;
+}
+
+QCalendarWidget QToolButton::menu-indicator {
+    nosubcontrol-origin: margin;
+    subcontrol-position: right center;
+    margin-top: 10px;
+    width:20px;
+}
+
+#qt_calendar_calendarview {
+    /* Remove the selected dashed box */
+    outline: 0px;
+
+    border: 2px solid  #22303e;
+    border-top: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-size:13px;
+
+    background-color: #3e5a74; /* цвет фона текущего месяца */
+    selection-background-color: #3daee9; /* цвет фона выбранного дня */
+    selection-color: #eff0f1; /* цвет текста выбранного дня */
+}
+
+#qt_calendar_calendarview::item:hover {
+    border-radius:5px;
+    background-color:red;
+}
+
+#qt_calendar_calendarview::item:selected {
+    background-color: orange;
+    border-radius:5px;
+}
+QLabel#incident_lbl{
+    font-weight: 500;
+    text-align: left;
+    color:#c5c5c5;
+}
+QLabel#operator_name{
+    font-size:10px;
+    font-style: italic;
+    text-align: left;
+}
+QLabel#title_inc_lbl{
+    font-size: 14pt;
+}
+QCheckBox::indicator {
+    width: 24px;
+    height: 24px;
+}
+
+QCheckBox::indicator::unchecked {
+    image: url(:/icons/icons/square_.svg);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/icons/icons/square_.svg);
+}
+
+QCheckBox::indicator::checked {
+    image: url(:/icons/icons/check-square_.svg);
+}
+
+QCheckBox::indicator:checked:hover {
+    stroke: rgb(42, 121, 163);
+    fill: rgb(42, 121, 163);
+}
+
+QCheckBox::indicator:checked:pressed {
+    image: url(:/icons/icons/check-square_.svg);
+}
